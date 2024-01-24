@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.red-bullets li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
