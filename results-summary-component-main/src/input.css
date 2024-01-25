@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.custom-gradient {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+

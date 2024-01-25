@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="output.css">
 </head>
-<body>
 
-  Your Result
-  76
-  of 100
+<body class="font-body md:flex justify-center items-center min-h-screen bg-gray-0">
+  <main class="md:flex">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <!-- purple div -->
+    <div class="bg-gradient-to-b from-purple-600 to-purple-800 text-center rounded-b-3xl md:rounded-3xl z-10">
 
-  Reaction
-  80 / 100
+      <h1 class="text-gray-400 text-lg font-bold pt-6 pb-8 md:text-xl">
+        Your Result
+      </h1>
+      <!-- circle div -->
+     
+      <div class="bg-gradient-to-b from-purple-800 to-purple-600 md:w-36 md:h-36 md:mr-28  w-32 h-32 rounded-full flex items-center justify-center ml-32">
+        <div>
+          <p class="text-white text-5xl font-bold">76</p>
+          <p class="text-gray-400">of 100</p>
+        </div>
+      </div>
+     
+
+      <div class="pt-6 pb-6">
+        <h2 class="text-white text-2xl font-semibold md:pt-5">
+          Great
+        </h2>
+        <p class="pl-5 pr-5 md:pt-4 text-gray-400 text-lg">
+          You scored higher than 65% of <br>the people who have taken <br> these tests.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- white div -->
+    <div class="p-5 bg-white shadow-2xl rounded-r-xl">
+      <h1 class="pb-4 text-xl text-grayBlue font-bold">
+        Summary
+      </h1>
+
+      <!-- Reaction -->
+      <div class="bg-lightRed bg-opacity-15 flex pt-5 pb-5 pl-2 rounded-lg mb-4">
+        <img src="./images/icon-reaction.svg" alt="reaction">
+        <p class="text-lightRed pl-2">
+          Reaction
+        </p>
+        <p class="md:pl-36 pl-40">
+          80 / 100
+        </p>
+      </div>
+
+      <!-- Memory -->
+      <div class="bg-orangeyYellow bg-opacity-15 flex pt-5 pb-5 pl-2 rounded-lg mb-4">
+        <img src="./images/icon-memory.svg" alt="memory">
+        <p class="text-orangeyYellow pl-2">
+          Memory
+        </p>
+        <p class="pl-40">
+          92 / 100
+        </p>
+      </div>
+
+      <!-- Verbal -->
+      <div class="bg-greenTeal bg-opacity-15 flex pt-5 pb-5 pl-2 rounded-lg mb-4">
+        <img src="./images/icon-verbal.svg" alt="verbal">
+        <p class="text-greenTeal pl-2">
+          Verbal
+        </p>
+        <p class="pl-40">
+          61 / 100
+        </p>
+      </div>
+
+      <!-- Visual -->
+      <div class="bg-cobaltBlue bg-opacity-15 flex pt-5 pb-5 pl-2 rounded-lg mb-4">
+        <img src="./images/icon-visual.svg" alt="visual">
+        <p class="text-cobaltBlue pl-2">
+          Visual
+        </p>
+        <p class="pl-40">
+          72 / 100
+        </p>
+      </div>
+
+      <!-- button -->
+      <div>
+        <button class="bg-grayBlue px-32 py-4 rounded-full text-white hover:bg-gradient-to-b from-purple-600 to-purple-800">
+          Continue
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+</body>
+
+</html>
+
+<!--     
 
   Memory
   92 / 100
@@ -38,10 +119,4 @@
   72 / 100
 
   Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+ -->
